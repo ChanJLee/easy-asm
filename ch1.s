@@ -1,8 +1,8 @@
-mov ax, 4e20h
-add ax, 123h
-mov bx, 200h
+mov ax, 4e20
+add ax, 123
+mov bx, 200
 add ax, bx
 mov bx, ax
 add al, bl
 add bh, ah
-mov ah, 0h
+mov ah, 0
