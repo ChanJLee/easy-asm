@@ -1,6 +1,6 @@
 # easy-asm
 
-asm in x86
+asm in x86, just for training
 
 # Platform
 
