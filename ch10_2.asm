@@ -24,13 +24,13 @@ code segment
             add di, 4
             loop s
 
+            mov ax, 4200h
+            int 21h
+
         f:
             mov ax, bx
-            ml bx
-            ml bx
+            mul bx
+            mul bx
             ret
-
-        mov ax, 4200h
-        int 21h
 code ends
 end start
