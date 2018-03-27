@@ -12,7 +12,7 @@ code segment
             mov si, 0
             mov di, 16
 
-        mov cx, 3
+            mov cx, 3
 
         s:  mov bx, ds:[si]
             call f
