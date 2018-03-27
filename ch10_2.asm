@@ -6,17 +6,15 @@ stack segment
 stack ends
 
 code segment
-    start:
-        mov ax, stack
-        mov ds, ax
+    start:  mov ax, stack
+            mov ds, ax
 
-        mov si, 0
-        mov di, 16
+            mov si, 0
+            mov di, 16
 
         mov cx, 3
 
-        s: 
-            mov bx, ds:[si]
+        s:  mov bx, ds:[si]
             call f
             mov ds:[di], ax
             mov ds:[di + 2], dx
@@ -27,8 +25,7 @@ code segment
             mov ax, 4200h
             int 21h
 
-        f:
-            mov ax, bx
+        f:  mov ax, bx
             mul bx
             mul bx
             ret
